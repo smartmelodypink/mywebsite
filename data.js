@@ -15,14 +15,14 @@
 
 const SITE = {
   // ---- YOUR BASICS ----------------------------------------------------
-  ownerName: "pinkmelody (code name)",                 // ← your name
+  ownerName: "pinkmelody",                 // ← your name
   siteTitle: "imapersonmhm.exe",             // ← shows in the top bar & browser tab
   tagline: "my little corner of the internet ♡",
   avatar: "",                         // ← e.g. "images/me.jpg" (leave "" for a cute default)
 
   aboutText:
-    "hi!! welcome to my page (✿◠‿◠) i’m 15 and i love collecting little " +
-    "moments from the things i’m into. click around, drag the windows, " +
+    "hi!! welcome to my page (✿◠‿◠) I’m 15 and I love collecting little " +
+    "moments from the things I’m into. click around, drag the windows, " +
     "and peek inside my hobby folders below. hope you smile while you’re here!",
 
   // ---- YOUR HOBBIES ---------------------------------------------------

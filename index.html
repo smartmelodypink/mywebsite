@@ -1,10 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>my page</title>
+
+  <!-- retro pixel fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Hello, this is my website!</h1>
-  <p>Deployed with GitHub Pages.</p>
+
+  <!-- floating decorations (stars, moon, clouds) -->
+  <svg class="decor star" style="left:7%;  top:120px; width:34px" viewBox="0 0 24 24"><path fill="#ffe14d" stroke="#3a2150" stroke-width="1.5" d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5 20.4l1.4-6.8L1.3 9l6.9-.7z"/></svg>
+  <svg class="decor star" style="right:9%; top:240px; width:26px" viewBox="0 0 24 24"><path fill="#ffe14d" stroke="#3a2150" stroke-width="1.5" d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5 20.4l1.4-6.8L1.3 9l6.9-.7z"/></svg>
+  <svg class="decor star" style="left:18%; bottom:90px; width:30px" viewBox="0 0 24 24"><path fill="#ffe14d" stroke="#3a2150" stroke-width="1.5" d="M12 2l2.9 6.3 6.9.7-5.1 4.6 1.4 6.8L12 17.8 5 20.4l1.4-6.8L1.3 9l6.9-.7z"/></svg>
+  <svg class="decor float" style="right:6%; top:420px; width:64px" viewBox="0 0 64 64"><path fill="#ffe14d" stroke="#3a2150" stroke-width="2" d="M44 8a24 24 0 1 0 12 44A20 20 0 0 1 44 8z"/></svg>
+  <svg class="decor float" style="left:4%;  top:55%; width:90px" viewBox="0 0 100 50"><g fill="#fff" stroke="#3a2150" stroke-width="2"><ellipse cx="35" cy="32" rx="28" ry="14"/><circle cx="30" cy="24" r="13"/><circle cx="52" cy="26" r="11"/></g></svg>
+
+  <!-- top taskbar -->
+  <header class="taskbar">
+    <div class="logo"><span class="glass">🔍</span><span id="logoName">my page</span></div>
+    <nav id="nav" aria-label="windows"></nav>
+    <div class="clock" id="clock">♡</div>
+  </header>
+
+  <!-- the desktop where windows get placed -->
+  <main id="desktop"></main>
+
+  <div class="hint">★ drag the windows around · click a photo to zoom · tap a tab up top to reopen ★</div>
+
+  <!-- photo zoom overlay -->
+  <div id="lightbox" role="dialog" aria-modal="true">
+    <div class="frame">
+      <div class="title-bar"><span class="t-emoji">🖼</span><span class="t-name">viewer.png</span>
+        <div class="win-controls"><button data-close aria-label="close">✕</button></div>
+      </div>
+      <div class="lb-body"></div>
+      <div class="lb-cap"></div>
+    </div>
+  </div>
+
+  <!-- content first, then logic -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

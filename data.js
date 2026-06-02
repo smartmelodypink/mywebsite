@@ -15,8 +15,8 @@
 
 const SITE = {
   // ---- YOUR BASICS ----------------------------------------------------
-  ownerName: "Aanya",                 // ← your name
-  siteTitle: "aanya.exe",             // ← shows in the top bar & browser tab
+  ownerName: "pinkmelody (code name)",                 // ← your name
+  siteTitle: "imapersonmhm.exe",             // ← shows in the top bar & browser tab
   tagline: "my little corner of the internet ♡",
   avatar: "",                         // ← e.g. "images/me.jpg" (leave "" for a cute default)
 
@@ -30,8 +30,8 @@ const SITE = {
   // "emoji" is just a little icon for the window. "photos" is the gallery.
   hobbies: [
     {
-      id: "photography",
-      title: "photography.png",
+      id: "embroidery",
+      title: "embroidery.png",
       emoji: "📷",
       blurb: "skies, streets & little details i didn’t want to forget.",
       photos: [
